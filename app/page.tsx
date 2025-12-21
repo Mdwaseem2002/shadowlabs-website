@@ -5,9 +5,12 @@ export default function ShadowLabsLanding() {
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
         <nav className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-black rounded-full"></div>
-            <span className="text-sm font-semibold tracking-tight">SHADOWLABS</span>
-          </div>
+  <div className="w-2 h-2 bg-black rounded-full"></div>
+  <span className="text-sm font-semibold tracking-tight">
+    <span className="text-gray-800">SHADOW</span>
+    <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">LABS</span>
+  </span>
+</div>
           <div className="flex items-center gap-8">
             <a href="#features" className="text-sm text-gray-600 hover:text-black transition-colors">Features</a>
             <a href="#teams" className="text-sm text-gray-600 hover:text-black transition-colors">Teams</a>
@@ -319,20 +322,218 @@ export default function ShadowLabsLanding() {
         </div>
       </section>
 
+      {/* Platform Integration Section */}
+      <section className="py-20 px-8 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-semibold mb-12 text-gray-900">
+            Works with every meeting platform
+          </h2>
+          
+          {/* Platform Icons - Replace with your image */}
+          <div className="mb-16">
+            <img src="./images/image 8.png" alt="Meeting Platforms" className="mx-auto max-w-md" />
+          </div>
+
+          {/* Integration Cards - Replace with your image */}
+          <div className="mb-20">
+            <img src="./images/image 9.png" alt="Integrates with and Compatible for" className="mx-auto max-w-4xl" />
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-20 px-8 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">
+              Begin your<br />ShadowLab Journey
+            </h2>
+            <p className="text-gray-600 text-sm max-w-2xl mx-auto">
+              Shadow is built to be successful soon. Whether you&apos;re a seasoned, veteran sales, a budding entrepreneur, or an expert in your field, discover the power of AI-driven conversations.
+            </p>
+            
+            <div className="flex items-center justify-center gap-6 mt-8">
+              <label className="text-sm text-gray-700">Monthly</label>
+              <div className="w-12 h-6 bg-gray-800 rounded-full relative cursor-pointer">
+                <div className="w-5 h-5 bg-white rounded-full absolute top-0.5 left-0.5"></div>
+              </div>
+              <label className="text-sm text-gray-700">Annually <span className="text-xs text-gray-500">-ask 10%</span></label>
+            </div>
+          </div>
+
+          {/* Pricing Cards */}
+          <div className="grid grid-cols-3 gap-6">
+            {/* Starter Plan */}
+            <div className="bg-white rounded-2xl p-8 border border-gray-200">
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">Starter</h3>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-gray-900">Free</span>
+              </div>
+              <button className="w-full bg-gray-900 text-white py-3 rounded-lg text-sm font-medium mb-6 hover:bg-gray-800 transition-colors">
+                Choose Starter
+              </button>
+              <div className="space-y-3">
+                <p className="text-xs text-gray-500 mb-4">All essentials for a trial run</p>
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-green-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm text-gray-700">10 days trial duration</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-green-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm text-gray-700">Limited support features</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-green-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm text-gray-700">1 customised emails & prompts</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-green-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm text-gray-700">Up to 10 hours of call recording</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Pro Plan */}
+            <div className="bg-white rounded-2xl p-8 border border-gray-200">
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">Pro</h3>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-gray-900">$20</span>
+                <span className="text-sm text-gray-500">/per user/month</span>
+              </div>
+              <button className="w-full bg-gray-900 text-white py-3 rounded-lg text-sm font-medium mb-6 hover:bg-gray-800 transition-colors">
+                Choose
+              </button>
+              <div className="space-y-3">
+                <p className="text-xs text-gray-500 mb-4">All essentials for trial run</p>
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-green-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm text-gray-700">Everything in the Starter</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-green-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm text-gray-700">API/Webhook access to create custom integrations</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-green-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm text-gray-700">20 Custom Support</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Enterprise Plan */}
+            <div className="bg-white rounded-2xl p-8 border border-gray-200">
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">Enterprise</h3>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-gray-900">$50</span>
+                <span className="text-sm text-gray-500">/per user/month</span>
+              </div>
+              <button className="w-full bg-gray-900 text-white py-3 rounded-lg text-sm font-medium mb-6 hover:bg-gray-800 transition-colors">
+                Choose
+              </button>
+              <div className="space-y-3">
+                <p className="text-xs text-gray-500 mb-4">All essentials for trial run</p>
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-green-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm text-gray-700">Everything in Pro Plus</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-green-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm text-gray-700">Everything in our website, no limitations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 gap-16">
+            <div>
+              <h2 className="text-3xl font-bold mb-8 text-gray-900">FAQs</h2>
+            </div>
+            <div className="space-y-6">
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-base font-semibold text-gray-900 mb-2">
+                  Why use plan Shadow for enterprise?
+                </h3>
+              </div>
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-base font-semibold text-gray-900 mb-2">
+                  Does Shadow leak my org data?
+                </h3>
+              </div>
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-base font-semibold text-gray-900 mb-2">
+                  Can I try it for free before starting?
+                </h3>
+              </div>
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-base font-semibold text-gray-900 mb-2">
+                  What languages and apps are supported?
+                </h3>
+              </div>
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-base font-semibold text-gray-900 mb-2">
+                  What tools does Shadow work with?
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-12 px-8 border-t border-gray-200 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-black rounded-full"></div>
-              <span className="text-sm font-semibold tracking-tight">SHADOWLABS</span>
+          <div className="flex items-start justify-between">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-2 h-2 bg-black rounded-full"></div>
+                <span className="text-sm font-semibold tracking-tight">SHADOWLABS</span>
+              </div>
+              <p className="text-xs text-gray-500 max-w-xs">
+                Make everything in your brand shift towards sharper conversations, higher conversion, happier customers.
+              </p>
             </div>
-            <p className="text-sm text-gray-500">
+            <div className="flex gap-16">
+              <div>
+                <h4 className="text-sm font-semibold text-gray-900 mb-3">Navigation</h4>
+                <ul className="space-y-2 text-sm text-gray-600">
+                  <li><a href="#" className="hover:text-gray-900">Features</a></li>
+                  <li><a href="#" className="hover:text-gray-900">Pricing</a></li>
+                  <li><a href="#" className="hover:text-gray-900">FAQs</a></li>
+                  <li><a href="#" className="hover:text-gray-900">Why us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="mt-8 pt-8 border-t border-gray-200">
+            <p className="text-xs text-gray-500">
               © 2024 ShadowLabs. All rights reserved.
             </p>
           </div>
         </div>
-      </footer>
+      </footer>     
     </div>
   );
 }
