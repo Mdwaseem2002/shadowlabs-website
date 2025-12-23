@@ -100,7 +100,11 @@ export default function ShadowLabsLanding() {
           <p className="text-gray-500 text-sm sm:text-base mb-6 sm:mb-8 animate-slide-up" style={{animationDelay: '0.1s'}}>
             The grid stage in every conversation
           </p>
-          <button className="bg-[#0f172a] text-white px-6 sm:px-8 py-3 sm:py-4 text-sm rounded-lg hover:bg-[#1e293b] transition-all duration-300 font-medium flex items-center gap-2 mx-auto hover:scale-105 shadow-lg hover:shadow-xl animate-slide-up" style={{animationDelay: '0.2s'}}>
+          <button 
+            onClick={() => window.open('https://drive.google.com/file/d/18GTUwBoa-k4wMYLlsMwIJ5_6D9Yb33nE/view', '_blank')}
+            className="bg-[#0f172a] text-white px-6 sm:px-8 py-3 sm:py-4 text-sm rounded-lg hover:bg-[#1e293b] transition-all duration-300 font-medium flex items-center gap-2 mx-auto hover:scale-105 shadow-lg hover:shadow-xl animate-slide-up" 
+            style={{animationDelay: '0.2s'}}
+          >
             <span>Download App</span>
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
