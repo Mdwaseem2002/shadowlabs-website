@@ -3,14 +3,14 @@
 import { useState } from 'react';
 
 export default function ShadowLabsLanding() {
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const toggleFaq = (index) => {
+  const toggleFaq = (index: number | null) => {
     setOpenFaq(openFaq === index ? null : index);
   };
 
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
