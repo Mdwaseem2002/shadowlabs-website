@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/shadowlabs-website',
+  // Comment out basePath for local development
+  // basePath: '/shadowlabs-website',
   images: {
     unoptimized: true,
   },
